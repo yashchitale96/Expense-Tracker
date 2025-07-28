@@ -1,13 +1,14 @@
-import React, {children, createContext, useReducer} from 'react';
+import React, {createContext, useReducer} from 'react';
 import AppReducer from './AppReducer'
 
 // Inital State
 const initialState = {
     transactions: [
-        {id: 1, text: 'Flower', amount: -20},
-        {id: 2, text: 'Salary', amount: 300},
-        {id: 3, text: 'Book', amount: -10},
-        {id: 4, text: 'Camera', amount: 150}
+        {id: 1, text: 'Salary', amount: 3000, timestamp: new Date('2025-01-20')},
+        {id: 2, text: 'Grocery Shopping', amount: -120, timestamp: new Date('2025-01-22')},
+        {id: 3, text: 'Gas', amount: -50, timestamp: new Date('2025-01-23')},
+        {id: 4, text: 'Freelance Project', amount: 800, timestamp: new Date('2025-01-25')},
+        {id: 5, text: 'Restaurant Dinner', amount: -75, timestamp: new Date('2025-01-26')}
     ]
 }
 
